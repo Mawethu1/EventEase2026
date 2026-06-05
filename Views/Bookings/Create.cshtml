@@ -1,0 +1,22 @@
+@model EventEase2026.Models.Booking
+@{ ViewData["Title"] = "New Booking"; }
+
+<h1>New Booking</h1>
+
+<form asp-action="Create" method="post" class="form">
+    <div asp-validation-summary="All" class="alert alert-danger mb-3" role="alert"></div>
+
+    <label>Venue</label>
+    <select asp-for="VenueId" asp-items="ViewBag.Venues"><option value="">-- select --</option></select>
+
+    <label>Event</label>
+    <select asp-for="EventId" asp-items="ViewBag.Events"><option value="">-- select --</option></select>
+
+    <label>Booking Date / Time</label>
+    <input asp-for="BookingDate" type="datetime-local" />
+
+    <div class="row">
+        <button type="submit" class="btn btn-primary">Book</button>
+        <a class="btn" asp-action="Index">Cancel</a>
+    </div>
+</form>

@@ -1,0 +1,25 @@
+@model EventEase2026.Models.Venue
+@{ ViewData["Title"] = "New Venue"; }
+
+<h1>New Venue</h1>
+
+<form asp-action="Create" enctype="multipart/form-data" method="post" class="form">
+    <div asp-validation-summary="All" class="alert alert-danger mb-3" role="alert"></div>
+
+    <label>Name</label>
+    <input asp-for="VenueName" />
+
+    <label>Location</label>
+    <input asp-for="Location" />
+
+    <label>Capacity</label>
+    <input asp-for="Capacity" type="number" min="1" />
+
+    <label>Image</label>
+    <input type="file" name="imageFile" accept="image/*" />
+
+    <div class="row">
+        <button type="submit" class="btn btn-primary">Create</button>
+        <a class="btn" asp-action="Index">Cancel</a>
+    </div>
+</form>

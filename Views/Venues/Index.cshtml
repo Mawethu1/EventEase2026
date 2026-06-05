@@ -1,0 +1,31 @@
+@model IEnumerable<EventEase2026.Models.Venue>
+@{ ViewData["Title"] = "Venues"; }
+
+<div class="page-head">
+    <h1>Venues</h1>
+    <a class="btn btn-primary" asp-action="Create">+ New Venue</a>
+</div>
+
+<div class="grid">
+@foreach (var v in Model)
+{
+    <div class="card">
+        @if (!string.IsNullOrEmpty(v.ImageUrl))
+        {
+            <img src="@v.ImageUrl" alt="@v.VenueName" class="card-img" />
+        }
+        else
+        {
+            <div class="card-img placeholder">No image</div>
+        }
+        <div class="card-body">
+            <h3>@v.VenueName</h3>
+            <p class="muted">@v.Location · capacity @v.Capacity</p>
+            <div class="row">
+                <a class="btn btn-sm" asp-action="Edit" asp-route-id="@v.VenueId">Edit</a>
+                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@v.VenueId">Delete</a>
+            </div>
+        </div>
+    </div>
+}
+</div>

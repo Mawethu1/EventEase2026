@@ -1,0 +1,11 @@
+@model EventEase2026.Models.Event
+@{ ViewData["Title"] = "Delete Event"; }
+
+<h1>Delete '@Model.EventName'?</h1>
+<p class="muted">Events with active bookings cannot be deleted.</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="EventId" />
+    <button type="submit" class="btn btn-danger">Confirm Delete</button>
+    <a class="btn" asp-action="Index">Cancel</a>
+</form>

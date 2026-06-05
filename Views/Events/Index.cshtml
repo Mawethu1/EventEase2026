@@ -1,0 +1,26 @@
+@model IEnumerable<EventEase2026.Models.Event>
+@{ ViewData["Title"] = "Events"; }
+
+<div class="page-head">
+    <h1>Events</h1>
+    <a class="btn btn-primary" asp-action="Create">+ New Event</a>
+</div>
+
+<table class="table">
+    <thead><tr><th>Name</th><th>Date</th><th>Type</th><th>Description</th><th></th></tr></thead>
+    <tbody>
+    @foreach (var e in Model)
+    {
+        <tr>
+            <td>@e.EventName</td>
+            <td>@e.EventDate.ToString("yyyy-MM-dd HH:mm")</td>
+            <td>@e.EventType?.Name</td>
+            <td>@e.Description</td>
+            <td>
+                <a class="btn btn-sm" asp-action="Edit" asp-route-id="@e.EventId">Edit</a>
+                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@e.EventId">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,27 @@
+@model EventEase2026.Models.Event
+@{ ViewData["Title"] = "Edit Event"; }
+
+<h1>Edit Event</h1>
+<form asp-action="Edit" method="post" class="form">
+    <div asp-validation-summary="All" class="alert alert-danger mb-3" role="alert"></div>
+    <input type="hidden" asp-for="EventId" />
+
+    <label>Name</label>
+    <input asp-for="EventName" />
+
+    <label>Date / Time</label>
+    <input asp-for="EventDate" type="datetime-local" />
+
+    <label>Event Type</label>
+    <select asp-for="EventTypeId" asp-items="ViewBag.EventTypes">
+        <option value="">Select an event type</option>
+    </select>
+
+    <label>Description</label>
+    <textarea asp-for="Description" rows="3"></textarea>
+
+    <div class="row">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a class="btn" asp-action="Index">Cancel</a>
+    </div>
+</form>

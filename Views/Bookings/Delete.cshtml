@@ -1,0 +1,11 @@
+@model EventEase2026.Models.Booking
+@{ ViewData["Title"] = "Cancel Booking"; }
+
+<h1>Cancel Booking #@Model.BookingId?</h1>
+<p>@Model.Event?.EventName at @Model.Venue?.VenueName on @Model.BookingDate.ToString("yyyy-MM-dd HH:mm")</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="BookingId" />
+    <button type="submit" class="btn btn-danger">Confirm Cancel</button>
+    <a class="btn" asp-action="Index">Back</a>
+</form>
