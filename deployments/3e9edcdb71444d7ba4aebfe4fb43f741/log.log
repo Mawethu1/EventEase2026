@@ -1,0 +1,64 @@
+2026-06-05T09:46:30.3706729Z,Updating submodules.,5fa56d6a-7f1e-4609-8df1-082a85b638dd,0
+2026-06-05T09:46:30.4800509Z,Preparing deployment for commit id '3e9edcdb71'.,17b96574-2bc4-4111-90dc-949221d6934a,0
+2026-06-05T09:46:30.6988019Z,Generating deployment script.,104d29fa-41dc-4338-9eb1-b3c789122038,0
+	2026-06-05T09:46:30.9033349Z,Using the following command to generate deployment script: 'azure site deploymentscript -y --no-dot-deployment -r "C:\local\Temp\zipdeploy\extracted" -o "C:\home\site\deployments\tools" --basic --sitePath "C:\local\Temp\zipdeploy\extracted"'.,,0
+	2026-06-05T09:46:32.6134588Z,Generating deployment script for Web Site,,0
+	2026-06-05T09:46:32.6510471Z,Generated deployment script files,,0
+2026-06-05T09:46:32.8822312Z,Running deployment command...,ccda432c-a36d-4b13-964b-4bdd45702db6,0
+	2026-06-05T09:46:32.8947222Z,Command: "C:\home\site\deployments\tools\deploy.cmd",,0
+	2026-06-05T09:46:48.2668191Z,Handling Basic Web Site deployment.,,0
+	2026-06-05T09:46:50.1908953Z,Creating app_offline.htm,,0
+	2026-06-05T09:46:50.2210749Z,KuduSync.NET from: 'C:\local\Temp\zipdeploy\extracted' to: 'C:\home\site\wwwroot',,0
+	2026-06-05T09:46:50.2512448Z,Deleting file: 'hostingstart.html',,0
+	2026-06-05T09:46:50.2813811Z,Copying file: 'appsettings.Development.json',,0
+	2026-06-05T09:46:50.3115370Z,Copying file: 'appsettings.json',,0
+	2026-06-05T09:46:50.3738276Z,Copying file: 'appsettings.Production.json',,0
+	2026-06-05T09:46:50.4050806Z,Copying file: 'Azure.Core.dll',,0
+	2026-06-05T09:46:50.4220217Z,Copying file: 'Azure.Identity.dll',,0
+	2026-06-05T09:46:50.4722339Z,Copying file: 'Azure.Storage.Blobs.dll',,0
+	2026-06-05T09:46:50.5625174Z,Copying file: 'Azure.Storage.Common.dll',,0
+	2026-06-05T09:46:50.6550863Z,Copying file: 'EventEase2026.deps.json',,0
+	2026-06-05T09:46:50.6863301Z,Copying file: 'EventEase2026.dll',,0
+	2026-06-05T09:46:50.7175801Z,Copying file: 'EventEase2026.exe',,0
+	2026-06-05T09:46:50.7644561Z,Copying file: 'EventEase2026.pdb',,0
+	2026-06-05T09:46:50.8138863Z,Copying file: 'EventEase2026.runtimeconfig.json',,0
+	2026-06-05T09:46:51.5168112Z,Copying file: 'EventEase2026.staticwebassets.endpoints.json',,0
+	2026-06-05T09:46:51.6575894Z,Copying file: 'Humanizer.dll',,0
+	2026-06-05T09:46:51.6876759Z,Copying file: 'Microsoft.Bcl.AsyncInterfaces.dll',,0
+	2026-06-05T09:46:51.7379598Z,Copying file: 'Microsoft.CodeAnalysis.CSharp.dll',,0
+	2026-06-05T09:46:51.7800961Z,Copying file: 'Microsoft.CodeAnalysis.CSharp.Workspaces.dll',,0
+	2026-06-05T09:46:51.8285812Z,Copying file: 'Microsoft.CodeAnalysis.dll',,0
+	2026-06-05T09:46:51.8425970Z,Copying file: 'Microsoft.CodeAnalysis.Workspaces.dll',,0
+	2026-06-05T09:46:51.8586177Z,Copying file: 'Microsoft.Data.SqlClient.dll',,0
+	2026-06-05T09:46:51.9207193Z,Copying file: 'Microsoft.EntityFrameworkCore.Abstractions.dll',,0
+	2026-06-05T09:46:51.9891541Z,Copying file: 'Microsoft.EntityFrameworkCore.Design.dll',,0
+	2026-06-05T09:46:52.0301002Z,Copying file: 'Microsoft.EntityFrameworkCore.dll',,0
+	2026-06-05T09:46:52.0457221Z,Copying file: 'Microsoft.EntityFrameworkCore.Relational.dll',,0
+	2026-06-05T09:46:52.0925999Z,Copying file: 'Microsoft.EntityFrameworkCore.SqlServer.dll',,0
+	2026-06-05T09:46:52.1723230Z,Copying file: 'Microsoft.Extensions.DependencyModel.dll',,0
+	2026-06-05T09:46:52.2024450Z,Copying file: 'Microsoft.Identity.Client.dll',,0
+	2026-06-05T09:46:52.5457310Z,Copying file: 'Microsoft.Identity.Client.Extensions.Msal.dll',,0
+	2026-06-05T09:46:52.6238580Z,Copying file: 'Microsoft.IdentityModel.Abstractions.dll',,0
+	2026-06-05T09:46:52.6863612Z,Copying file: 'Microsoft.IdentityModel.JsonWebTokens.dll',,0
+	2026-06-05T09:46:52.7038469Z,Copying file: 'Microsoft.IdentityModel.Logging.dll',,0
+	2026-06-05T09:46:52.7176074Z,Copying file: 'Microsoft.IdentityModel.Protocols.dll',,0
+	2026-06-05T09:46:52.7338847Z,Copying file: 'Microsoft.IdentityModel.Protocols.OpenIdConnect.dll',,0
+	2026-06-05T09:46:52.7957347Z,Copying file: 'Microsoft.IdentityModel.Tokens.dll',,0
+	2026-06-05T09:46:52.8742495Z,Copying file: 'Microsoft.SqlServer.Server.dll',,0
+	2026-06-05T09:46:52.9676122Z,Copying file: 'Microsoft.Win32.SystemEvents.dll',,0
+	2026-06-05T09:46:53.0457373Z,Copying file: 'Mono.TextTemplating.dll',,0
+	2026-06-05T09:46:53.0951470Z,Copying file: 'System.CodeDom.dll',,0
+	2026-06-05T09:46:53.1253342Z,Copying file: 'System.Composition.AttributedModel.dll',,0
+	2026-06-05T09:46:53.1553405Z,Copying file: 'System.Composition.Convention.dll',,0
+	2026-06-05T09:46:53.1863637Z,Copying file: 'System.Composition.Hosting.dll',,0
+	2026-06-05T09:46:53.2176157Z,Copying file: 'System.Composition.Runtime.dll',,0
+	2026-06-05T09:46:53.2358717Z,Copying file: 'System.Composition.TypedParts.dll',,0
+	2026-06-05T09:46:53.2661088Z,Copying file: 'System.Configuration.ConfigurationManager.dll',,0
+	2026-06-05T09:46:53.3269899Z,Copying file: 'System.Drawing.Common.dll',,0
+	2026-06-05T09:46:53.3894904Z,Copying file: 'System.IdentityModel.Tokens.Jwt.dll',,0
+	2026-06-05T09:46:53.4068659Z,Copying file: 'System.IO.Hashing.dll',,0
+	2026-06-05T09:46:53.4676147Z,Omitting next output lines...,,0
+	2026-06-05T09:46:54.1395003Z,Finished successfully.,,0
+2026-06-05T09:46:54.2332513Z,Running post deployment command(s)...,78f6a589-be8e-4fb2-bc59-6653287a5e4b,0
+2026-06-05T09:46:54.3271885Z,Triggering recycle (preview mode disabled).,f5ca2167-18c7-480d-b86d-4e300a686179,0
+2026-06-05T09:46:54.4877643Z,Deployment successful.,2ead1d0c-5a85-41cd-b6c4-26f61705142c,0
